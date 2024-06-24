@@ -1,0 +1,242 @@
+body{
+    padding: 50px 100px;
+    background-color: 
+    #f9f4e8;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    height: 105vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    margin-right: 10px;
+}
+.logo_design{
+    background-color: 
+    #ea5c70;
+    padding: 6px;
+    border-radius: 15px;
+    color: white;
+    font-size: 13px;
+}
+.links li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px ;
+    cursor: pointer;
+}
+.btns{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.btns li{
+    margin-right: 10px;
+}
+.btns li:nth-child(1) button{
+    background-color: transparent;
+    border: none;
+}
+.btn-primary{
+    background-color: 
+    #4977ea;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+h1{
+    font-family: "Leckerli One", cursive;
+    font-size: 50px;
+}
+form input{
+    padding: 10px;
+}
+.form-info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.form-info img{
+    margin-right: 10px;
+}
+section{
+    display: flex;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgCont{
+    position: relative;
+    height: 80%;
+    width: 50%;
+}
+.imgCont img{
+    width: 100%;
+}
+.img1, .img2, .img3, .img4{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.img1{
+    transform: rotate(-45deg);
+}
+.img2{
+    transform: rotate(-30deg);
+}
+.img3{
+    transform: rotate(-15deg);
+}
+footer{
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+.footer_links{
+    padding: 0;
+}
+.footer_links li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px ;
+    cursor: pointer;
+}
+footer .help{
+    display: flex;
+}
+footer .help li{
+    list-style: none;
+}
+.ham{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.ham img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 975px){
+    body{
+        height: 100vh;
+    }
+    .links{
+        display: none;
+    }
+    .btns{
+        display: none;
+    }
+    .ham{
+        display: block;
+    }
+    section{
+        flex-direction: column-reverse;
+        height: 700px;
+        justify-content: space-between;
+    }
+    .right, .left{
+        width: 100%;
+    }
+    .right{
+        height: 50%;
+    }
+    .left{
+        height: 50%;
+    }
+    .imgCont img{
+        width: 80%;
+    }
+    
+}
+@media (max-width: 768px){
+    body{
+        padding: 25px 50px;
+    }
+    .imgCont img{
+        width: 100%;
+    }
+    footer{
+        margin-top: 150px;
+    }
+    footer li{
+        margin-right: 5px;
+    }
+    footer .help ul{
+        padding-left: 5px;
+    }
+}
+@media (max-width: 552px){
+
+    .imgCont{
+        width: 70%;
+    }
+    footer{
+        margin-top: 200px;
+        flex-direction: column;
+    }
+    form *{
+        display: block;
+    }
+    form button, form input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    form input{
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 450px){
+    h1{
+        font-size: 40px ;
+    }
+    .logo img{
+        width: 70px;
+    }
+    .logo_design{
+        font-size: 8px;
+    }
+    section{
+        height: 600px;
+       }
+       footer{
+        margin-top: 250px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 382px){
+   body{
+    font-size: 12px;
+    padding: 10px 20px;
+   }
+   .right{
+    height: 30%;
+   }
+   section{
+    height: 500px;
+   }
+   .form-info img{
+    width: 15px;
+   }
+   .form-info span{
+        font-size: 9px;
+   }
+}
